@@ -1,5 +1,9 @@
 {
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
-  "projects": {}
+  "projects": {
+    "news-compiler": "apps/news-compiler",
+    "news-compiler-e2e": "apps/news-compiler-e2e",
+    "ui": "libs/ui"
+  }
 }
