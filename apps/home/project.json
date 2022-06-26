@@ -13,7 +13,10 @@
         "polyfills": "apps/home/src/polyfills.ts",
         "tsConfig": "apps/home/tsconfig.app.json",
         "assets": ["apps/home/src/favicon.ico", "apps/home/src/assets"],
-        "styles": ["apps/home/src/styles.css", "../project-portfolio/node_modules/bulma/css/bulma.css"],
+        "styles": [
+          "apps/home/src/styles.css",
+          "../project-portfolio/node_modules/bulma/css/bulma.css"
+        ],
         "scripts": []
       },
       "configurations": {

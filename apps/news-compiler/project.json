@@ -16,7 +16,10 @@
           "apps/news-compiler/src/favicon.ico",
           "apps/news-compiler/src/assets"
         ],
-        "styles": ["apps/news-compiler/src/styles.css", "../project-portfolio/node_modules/bulma/css/bulma.css"],
+        "styles": [
+          "apps/news-compiler/src/styles.css",
+          "../project-portfolio/node_modules/bulma/css/bulma.css"
+        ],
         "scripts": []
       },
       "configurations": {
