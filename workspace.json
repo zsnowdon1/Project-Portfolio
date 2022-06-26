@@ -7,5 +7,6 @@
     "news-compiler": "apps/news-compiler",
     "news-compiler-e2e": "apps/news-compiler-e2e",
     "ui": "libs/ui"
-  }
+  },
+  "styles": ["apps/home/src/styles.css", "../project-portfolio/node_modules/bulma/css/bulma.css"]
 }

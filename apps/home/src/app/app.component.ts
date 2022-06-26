@@ -13,8 +13,4 @@ export class AppComponent implements OnInit    {
     this.loading = true;
   }
 
-  ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
-  }
-
 }

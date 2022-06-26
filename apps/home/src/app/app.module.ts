@@ -9,7 +9,7 @@ import { UiModule } from '@project-portfolio/ui';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
+    RouterModule.forRoot([{path: 'home'}], { initialNavigation: 'enabledBlocking' }),
     UiModule,
   ],
   providers: [],
