@@ -28,6 +28,7 @@ export class NewsOptionsComponent implements OnInit, OnDestroy  {
     } else {
       this.finance = JSON.parse(tempFinance);
     }
+
   }
 
   ngOnDestroy() {
@@ -63,6 +64,16 @@ export class NewsOptionsComponent implements OnInit, OnDestroy  {
       if(this.sports[i].genre === genre) {
         this.sports[i].selected = !this.sports[i].selected;
         this.pushSports();
+        return;
+      }
+    }
+  }
+
+  selectFinance(genre: string): void {
+    for(let i = 0; i < this.finance.length; i++) {
+      if(this.finance[i].genre === genre) {
+        this.finance[i].selected = !this.finance[i].selected;
+        this.pushFinance();
         return;
       }
     }
