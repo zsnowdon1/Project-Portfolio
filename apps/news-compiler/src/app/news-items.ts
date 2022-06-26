@@ -1,14 +1,14 @@
-export interface SportsTypes {
+export interface Sport {
   genre: string;
   selected: boolean;
 }
 
-export interface FinanceTypes {
+export interface Finance {
   genre: string;
   selected: boolean;
 }
 
-export enum Sports {
+export enum SportTypes {
   Basketball,
   Football,
   Soccer,
@@ -16,7 +16,8 @@ export enum Sports {
   Baseball,
 }
 
-export enum Finances {
+export enum FinanceTypes {
   Stocks,
-  HedgeFunds
+  HedgeFunds,
+  WallStreet,
 }

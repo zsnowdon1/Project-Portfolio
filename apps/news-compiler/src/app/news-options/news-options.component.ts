@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Finances, FinanceTypes, Sports, SportsTypes } from '../news-items';
+import { Finance, FinanceTypes, Sport, SportTypes, } from '../news-items';
 
 @Component({
   selector: 'project-portfolio-news-options',
@@ -11,8 +11,8 @@ export class NewsOptionsComponent implements OnInit, OnDestroy  {
   finance;
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   constructor() {
-    this.sports = new Array<SportsTypes>()
-    this.finance = new Array<FinanceTypes>();
+    this.sports = new Array<Sport>()
+    this.finance = new Array<Finance>();
   }
 
   ngOnInit() {
@@ -37,8 +37,8 @@ export class NewsOptionsComponent implements OnInit, OnDestroy  {
 
   setSportsDefault(): void {
 
-    for(let i = 0; i < Object.keys(Sports).length / 2; i++) {
-      this.sports.push({genre: Sports[i], selected: false});
+    for(let i = 0; i < Object.keys(SportTypes).length / 2; i++) {
+      this.sports.push({genre: SportTypes[i], selected: false});
     }
     this.pushSports();
   }
@@ -48,8 +48,8 @@ export class NewsOptionsComponent implements OnInit, OnDestroy  {
   }
 
   setFinanceDefault(): void {
-    for(let i = 0; i < Object.keys(Finances).length / 2; i++) {
-      this.finance.push({genre: Finances[i], selected: false});
+    for(let i = 0; i < Object.keys(FinanceTypes).length / 2; i++) {
+      this.finance.push({genre: FinanceTypes[i], selected: false});
     }
     this.pushFinance();
   }
