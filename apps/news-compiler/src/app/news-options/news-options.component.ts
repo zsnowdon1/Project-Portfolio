@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { FinanceTypes, SportsTypes } from '../news-items';
+import { Finances, FinanceTypes, Sports, SportsTypes } from '../news-items';
 
 @Component({
   selector: 'project-portfolio-news-options',
@@ -7,11 +7,12 @@ import { FinanceTypes, SportsTypes } from '../news-items';
   styleUrls: ['./news-options.component.css'],
 })
 export class NewsOptionsComponent implements OnInit, OnDestroy  {
-  sports = new Array<SportsTypes>();
-  finance = new Array<FinanceTypes>();
+  sports;
+  finance;
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   constructor() {
-    
+    this.sports = new Array<SportsTypes>()
+    this.finance = new Array<FinanceTypes>();
   }
 
   ngOnInit() {
@@ -20,30 +21,50 @@ export class NewsOptionsComponent implements OnInit, OnDestroy  {
       this.setSportsDefault();
     } else {
       this.sports = JSON.parse(tempSports);
-      console.log(JSON.stringify(this.sports));
     }
-    if(!window.localStorage.getItem("finance")) {
+    const tempFinance = window.localStorage.getItem("finance");
+    if(!tempFinance) {
       this.setFinanceDefault();
+    } else {
+      this.finance = JSON.parse(tempFinance);
     }
   }
 
   ngOnDestroy() {
-    window.localStorage.setItem("Sports", JSON.stringify(this.sports));
-    window.localStorage.setItem("Finance", JSON.stringify(this.finance));
+    this.pushSports();
+    this.pushFinance();
   }
 
   setSportsDefault(): void {
-    this.sports.push({genre: "Football", selected: false});
-    this.sports.push({genre: "Basketball", selected: false});
-    this.sports.push({genre: "Soccer", selected: false});
-    this.sports.push({genre: "Golf", selected: false});
-    this.sports.push({genre: "Baseball", selected: false});
-    window.localStorage.setItem("Sports", JSON.stringify(this.sports));
+
+    for(let i = 0; i < Object.keys(Sports).length / 2; i++) {
+      this.sports.push({genre: Sports[i], selected: false});
+    }
+    this.pushSports();
+  }
+
+  pushSports(): void {
+    window.localStorage.setItem("sports", JSON.stringify(this.sports));
   }
 
   setFinanceDefault(): void {
-    this.finance.push({genre: "Banking", selected: false});
-    this.finance.push({genre: "HedgeFunds", selected: false});
-    window.localStorage.setItem("Finance", JSON.stringify(this.finance));
+    for(let i = 0; i < Object.keys(Finances).length / 2; i++) {
+      this.finance.push({genre: Finances[i], selected: false});
+    }
+    this.pushFinance();
+  }
+
+  pushFinance(): void {
+    window.localStorage.setItem("finance", JSON.stringify(this.finance));
+  }
+
+  selectSport(genre: string): void {
+    for(let i = 0; i < this.sports.length; i++) {
+      if(this.sports[i].genre === genre) {
+        this.sports[i].selected = !this.sports[i].selected;
+        this.pushSports();
+        return;
+      }
+    }
   }
 }

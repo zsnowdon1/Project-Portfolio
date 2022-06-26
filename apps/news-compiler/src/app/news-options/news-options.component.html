@@ -2,7 +2,7 @@
   <label class="news-type">Sports:</label>
   <div *ngFor="let sport of sports">
     <div class="genres">
-      <input type="checkbox" class="news-item"/>
+      <input type="checkbox" (click)="selectSport(sport.genre)" class="news-item"/>
       <label class="genre-label">{{ sport.genre }}</label>
     </div>
   </div>
