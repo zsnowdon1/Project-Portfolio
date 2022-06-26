@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@project-portfolio/news-options": ["libs/news-options/src/index.ts"],
       "@project-portfolio/ui": ["libs/ui/src/index.ts"]
     }
   },

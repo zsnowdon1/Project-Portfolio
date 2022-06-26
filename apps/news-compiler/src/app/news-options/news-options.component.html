@@ -1,0 +1,16 @@
+<div class="sidebar">
+  <label class="news-type">Sports:</label>
+  <div *ngFor="let sport of sports">
+    <div class="genres">
+      <input type="checkbox" class="news-item"/>
+      <label class="genre-label">{{ sport.genre }}</label>
+    </div>
+  </div>
+  <label class="news-type">Finance:</label>
+  <div *ngFor="let finance of finance">
+    <div class="genres">
+      <input type="checkbox" class="news-item"/>
+      <label class="genre-label">{{ finance.genre }}</label>
+    </div>
+  </div>
+</div>
