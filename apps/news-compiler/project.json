@@ -18,7 +18,9 @@
         ],
         "styles": [
           "apps/news-compiler/src/styles.css",
-          "../project-portfolio/node_modules/bulma/css/bulma.css"
+          "../project-portfolio/node_modules/bulma/css/bulma.css",
+          "../project-portfolio/node_modules/bootstrap/dist/css/bootstrap.css",
+          "../project-portfolio/node_modules/bootstrap/dist/css/bootstrap.min.css"
         ],
         "scripts": []
       },

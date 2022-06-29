@@ -21,3 +21,9 @@ export enum FinanceTypes {
   HedgeFunds,
   WallStreet,
 }
+
+export interface NewsItem {
+  title: string;
+  subtitle: string;
+  url: string;
+}
