@@ -1,1 +1,4 @@
-<p>new-items works!</p>
+
+<div *ngFor="let newsItem of stories">
+  <project-portfolio-news-items-modal [title]="newsItem.title" [subtitle]="newsItem.subtitle" [url]="newsItem.url"></project-portfolio-news-items-modal>
+</div>

@@ -1,3 +1,4 @@
-.liner {
-  left: 250px;
+.grid-parent {
+  display: grid;
+  grid-template-columns: .12fr 1fr
 }
