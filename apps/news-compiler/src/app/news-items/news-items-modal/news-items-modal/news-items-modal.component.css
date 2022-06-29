@@ -1,3 +1,22 @@
 .side-container {
   outline: black;
 }
+
+.container:hover {
+  background-color: black;
+}
+
+.col-lg-2 {
+  padding: 25px;
+  outline: 2px solid black;
+}
+
+.row {
+  outline: 5px solid black;
+  border-radius: 5px;
+}
+
+.col-sm {
+  width: auto;
+  padding: 25px;
+}
