@@ -17,9 +17,9 @@ export class NewsItemsComponent implements OnInit {
     this.stories = new Array<NewsItem>();
 
     const NewsItem1 = {
-      title: "How Kyrie Irving's opt-in answers one question for the Nets and creates many more",
-      subtitle: "Despite Kyrie Irving deciding to opt in with the Nets, there are still plenty of ways this relationship could play out.",
-      url: "https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2022%2F0310%2Fr984466_1296x729_16%2D9.jpg&w=238&h=133&scale=crop&cquality=80&location=center"
+      title: "Ultimate NBA free agency guide: Needs, priorities and spending options for all 30 teams",
+      subtitle: "With free agency well underway, here's how things line up for every NBA team, including which ones could trade for Kevin Durant.",
+      url: "https:/nba/insider/story/_/id/34156470/ultimate-2022-nba-free-agency-guide-needs-priorities-spending-options-all-30-teams"
     } as NewsItem
 
     const NewsItem2 = {
