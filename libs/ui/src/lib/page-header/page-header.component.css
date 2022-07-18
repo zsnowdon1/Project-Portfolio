@@ -1,0 +1,53 @@
+/*
+=====
+DEPENDENCES
+=====
+*/
+
+.r-link{
+  display: var(--rLinkDisplay, inline-flex) !important;
+}
+
+.r-list{
+  padding-left: var(--rListPaddingLeft, 0) !important;
+  margin-top: var(--rListMarginTop, 0) !important;
+  margin-bottom: var(--rListMarginBottom, 0) !important;
+  list-style: var(--rListListStyle, none) !important;
+}
+
+/* 
+When the header is clicked
+*/
+.menu__link:focus{
+  background: #1E1E1E;
+}
+
+/* 
+Change to pointer similar to vs code header
+*/
+
+.menu:hover .menu__link:not(:hover){
+  cursor: pointer;
+}
+
+/*
+Menu scheme
+*/
+
+.menu{
+  background-color: #252526;
+  /* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24); */
+}
+
+.menu__list{
+  display: flex;  
+}
+
+.menu__link{
+  padding: var(--menuLinkPadding, 1.5rem 2.5rem);
+  font-weight: 700;
+  text-transform: lowercase;
+  color: #E2C08D;
+  text-decoration: none;
+}
+
