@@ -25,7 +25,6 @@ When the header is clicked
 /* 
 Change to pointer similar to vs code header
 */
-
 .menu:hover .menu__link:not(:hover){
   cursor: pointer;
 }
@@ -33,7 +32,6 @@ Change to pointer similar to vs code header
 /*
 Menu scheme
 */
-
 .menu{
   background-color: #252526;
   /* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24); */
@@ -44,10 +42,33 @@ Menu scheme
 }
 
 .menu__link{
-  padding: var(--menuLinkPadding, 1.5rem 2.5rem);
-  font-weight: 700;
+  padding: var(--menuLinkPadding, .5rem 1rem);
+  font-weight: 500;
   text-transform: lowercase;
+  font-size: 14px;
   color: #E2C08D;
   text-decoration: none;
+  background-color: #2D2D2D;
 }
 
+.directory {
+  background-color: #1E1E1E;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 1), 0 1px 2px 0 rgba(0, 0, 0, .24);
+  color: #A9A9A9;
+  color: #A9A9A9;
+  padding-left: 1rem;
+  font-weight: 500;
+  text-transform: lowercase;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.topbar {
+  background-color: #323233;
+  height: auto;
+  text-align: center;
+  color: #8D8D8D;
+  vertical-align: bottom;
+  font-size: 14px;
+  text-transform: lowercase;
+}
