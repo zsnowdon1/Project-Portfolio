@@ -7,3 +7,13 @@
 .header {
   flex-grow: 1;
 }
+
+.topbar {
+  background-color: #323233;
+  height: auto;
+  text-align: center;
+  color: #8D8D8D;
+  vertical-align: bottom;
+  font-size: 14px;
+  text-transform: lowercase;
+}
