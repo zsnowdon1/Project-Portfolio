@@ -1,12 +1,10 @@
 /* The side navigation menu */
 .sidebar {
-  margin: 0;
-  padding: 0;
   width: 200px;
   background-color: #f1f1f1;
-  position: fixed;
   height: 100%;
   overflow: auto;
+  background-color: #252526;
 }
 
 /* Sidebar links */
@@ -38,7 +36,7 @@ div.content {
 
 .news-type {
   display: block;
-  color: black;
+  color: #E2C08D;
   padding-left: 16px;
   padding-top: 16px;
   text-decoration: none;
@@ -55,7 +53,7 @@ div.content {
 
 .genre-label {
   padding-left: 5px;
-  color: black;
+  color: #CBCBCB;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */

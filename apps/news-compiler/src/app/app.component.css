@@ -1,4 +1,9 @@
-.grid-parent {
-  display: grid;
-  grid-template-columns: .12fr 1fr
+.wrapper {
+  background-color: #252526;
+  width: 100%;
+  display: flex;
+}
+
+.header {
+  flex-grow: 1;
 }
