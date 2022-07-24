@@ -1,0 +1,64 @@
+/*
+=====
+DEPENDENCES
+=====
+*/
+
+.r-link{
+  display: var(--rLinkDisplay, inline-flex) !important;
+}
+
+.r-list{
+  padding-left: var(--rListPaddingLeft, 0) !important;
+  margin-top: var(--rListMarginTop, 0) !important;
+  margin-bottom: var(--rListMarginBottom, 0) !important;
+  list-style: var(--rListListStyle, none) !important;
+}
+
+/* 
+When the header is clicked
+*/
+.menu__link:focus{
+  background: #1E1E1E;
+}
+
+/* 
+Change to pointer similar to vs code header
+*/
+.menu:hover .menu__link:not(:hover){
+  cursor: pointer;
+}
+
+/*
+Menu scheme
+*/
+.menu{
+  background-color: #252526;
+
+}
+
+.menu__list{
+  display: flex;  
+}
+
+.menu__link{
+  padding: var(--menuLinkPadding, .5rem 1rem);
+  font-weight: 500;
+  text-transform: lowercase;
+  font-size: 14px;
+  color: #E2C08D;
+  text-decoration: none;
+  background-color: #2D2D2D;
+}
+
+.directory {
+  background-color: #1E1E1E;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 1), 0 1px 2px 0 rgba(0, 0, 0, .24);
+  color: #A9A9A9;
+  color: #A9A9A9;
+  padding-left: 1rem;
+  font-weight: 500;
+  text-transform: lowercase;
+  text-decoration: none;
+  font-size: 13px;
+}

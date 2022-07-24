@@ -1,4 +1,19 @@
-.grid-parent {
-  display: grid;
-  grid-template-columns: .12fr 1fr
+.wrapper {
+  background-color: #252526;
+  width: 100%;
+  display: flex;
+}
+
+.header {
+  flex-grow: 1;
+}
+
+.topbar {
+  background-color: #323233;
+  height: auto;
+  text-align: center;
+  color: #8D8D8D;
+  vertical-align: bottom;
+  font-size: 14px;
+  text-transform: lowercase;
 }
