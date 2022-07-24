@@ -1,19 +1,21 @@
+.container {
+  background-color: #323233;
+  border-style: solid;
+  border: none
+}
+
 .side-container {
-  outline: black;
+  width: 100%;
+  color: #E2C08D;
 }
 
 .container:hover {
-  background-color: black;
+  background-color: #1E1E1E;
 }
 
 .col-lg-2 {
   padding: 25px;
-  outline: 2px solid black;
-}
-
-.row {
-  outline: 5px solid black;
-  border-radius: 5px;
+  
 }
 
 .col-sm {
