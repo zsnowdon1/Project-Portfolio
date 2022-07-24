@@ -2,8 +2,6 @@
 
 # ProjectPortfolio
 
-## Adding capabilities to your workspace
-
 Welcome to my project portfolio web application that is currently a work in progress. I currently am working on the news-compiler application that uses the NewsInfoAPI from my repository (https://github.com/zsnowdon1/NewsInfoAPI) to parse news websites from various sources. A user can select the topics they are interested in, and the application will compile a list of articles they may be interested in.
 
 ## What has been done
